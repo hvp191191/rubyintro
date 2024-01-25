@@ -12,6 +12,18 @@
 # If the two lists contain the same item, only show it once!
 # Lastly, display each item in the list prepended with "buy ".
 
+shopping_list_mine = ["milk", "eggs","bacon"]
+shopping_list_friend = ["beer","cookies","apples"]
+
+combined_shopping_list = shopping_list_mine + shopping_list_friend
+
+puts combined_shopping_list.sort!
+
+puts combined_shopping_list.uniq
+
+puts combined_shopping_list.prepend "Buy"
+
+puts combined_shopping_list.each {|combined_shopping_list|combined_shopping_list.prepend("Buy ")}
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
